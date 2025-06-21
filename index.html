@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-secondary">
+    
+<div id="header" class="container text-center p-3">
+   
+    <div class="row">
+        <div class="col pt-2">
+            <img src="https://cdn.vectorstock.com/i/1000v/06/05/cat-logo-vector-26730605.jpg" alt="cat Logo"
+            width="90">
+        </div>
+    </div>
+
+    <div class="row pt-2">
+        <div class="col">
+            <h1 class="m-3 fw-bold">TIC-TAC-TOE</h1>
+        </div>
+    </div>
+
+    <div class="row pt-2">
+        <div id="p1" class="col fs-2">Player 1 - X</div>
+        <div id="p2" class="col fs-2">Player 2 - O</div>
+    </div>
+
+</div>
+
+<!--ALERT POP UP-->
+<div id="alert--container">
+
+    <div id="alertStart" class="alert alert-dark text-center m-0 me-5 ms-5" role="alert">
+  Player 1 - START! 🚦
+    </div>
+    <div id="alertWinner"  class="alert alert-dark text-center m-0 me-5 ms-5" role="alert">
+  You Won!
+    </div>
+    <div id="alertDraw" class="alert alert-dark text-center m-0 me-5 ms-5" role="alert">
+  it's a DRAW! 🥸
+    </div>
+</div>
+
+<!--GRID-->
+<div class="container m-auto p-3 g-5">
+    
+    <div id="grid" class="container-outline-light m-auto p-0 bg-light text-info text-center alaign-middle border border-info">
+
+        <div class="row fs-1 g-0">
+            <div id="box0" class="box col p-3 border border-info"></div>
+            <div id="box1" class="box col p-3 border border-info"></div>
+            <div id="box2" class="box col p-3 border border-info"></div>
+        </div>
+        <div class="row fs-1 g-0">
+            <div id="box3" class="box col p-3 border border-info"></div>
+            <div id="box4" class="box col p-3 border border-info"></div>
+            <div id="box5" class="box col p-3 border border-info"></div>
+        </div>
+        <div class="row fs-1 g-0">
+            <div id="box6" class="box col p-3 border border-info"></div>
+            <div id="box7" class="box col p-3 border border-info"></div>
+            <div id="box8" class="box col p-3 border border-info"></div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<!--BUTTONS-->
+<div class="d-grid col-2 mx-auto pt-4">
+    <button id="playBtn" type="button" class="btn btn-success">Play</button>
+    <button id="resetBtn" type="button" class="btn btn-danger mt-2">Reset</button>
+</div>
+
+
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
